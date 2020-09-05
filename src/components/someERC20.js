@@ -1,3 +1,5 @@
+//This is a "template" component
+
 import React, { Component, Button } from 'react'
 import Web3 from 'web3'
 
