@@ -1,4 +1,8 @@
 //This is a "template" component
+//You will need to input 1)an ERC20 contract address in the code below -const Address = 'here'- 2)contract's ABI in -const Abi = [here]-
+//3)infura.com API key/URL in -var web3 = new Web3(new Web3.providers.HttpProvider('here')) 4)your Ethereum address in -const myEthAddress = 'here'-
+//This code will return 3 things: 1)Contract name 2)Contract's current eth balance 3)your Balance of this "token" with "BalanceOf" function
+//Then it uses React to render the returned data onto a webpage.
 
 import React, { Component, Button } from 'react'
 import Web3 from 'web3'
@@ -30,16 +34,16 @@ class someERC20 extends Component {
     const contract = new web3.eth.Contract(Abi, Address)
     
     //Ready to make calls now
-    //1) Get contract name
+    //1)Get contract name
     const name = await contract.methods.name().call()
     this.setState({ name })
 
-    //2) Get contract's current eth balance
+    //2)Get contract's current eth balance
     var getBalance = await web3.eth.getBalance(Address)
     getBalance = web3.utils.fromWei(getBalance, 'ether')
     this.setState({ getBalance })
 
-    //3) Get your Balance with "BalanceOf" function
+    //3)Get your Balance with "BalanceOf" function
     var balanceOf = await contract.methods.balanceOf(myEthAddress).call()
     balanceOf = web3.utils.fromWei(balanceOf, 'ether')
     this.setState({ balanceOf })
