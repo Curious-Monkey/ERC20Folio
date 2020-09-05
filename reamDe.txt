@@ -1,6 +1,17 @@
-App structure:
+Very early stage prototype/play code. Likely, I won't develop it far.
+App functions so far:
 This app makes call to Ethereum Network through infura API and returns data:
 -info on Eth network (from NetCheck.js in the components folder)
 -info on the p3d/powh3d contract (Warning this is a pyramid on blockchain, literally don't touch it)
 
 app starts with "npm start"
+
+Original Idea was to develop a tool where users input their public Ethereum address and the app returns all ERC20 balances they might have.
+
+after that you could start adding some more functionality:
+-Trading via Uniswap
+-Trading graphs and other data
+-ERC20 contract interface
+  -for those tokens that you stake, etc, create a simple interface to interact with their contract functions (instead of relying on their websites, have your personal front end)
+  
+
