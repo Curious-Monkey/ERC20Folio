@@ -1,0 +1,6 @@
+App structure:
+This app makes call to Ethereum Network through infura API and returns data:
+-info on Eth network (from NetCheck.js in the components folder)
+-info on the p3d/powh3d contract (Warning this is a pyramid on blockchain, literally don't touch it)
+
+app starts with "npm start"

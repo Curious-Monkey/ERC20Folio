@@ -1,0 +1,7 @@
+Used Create-react-app (React/NPM/NodeJS pack)
+https://www.techomoro.com/install-and-setup-a-react-app-on-ubuntu/
+
+Web3js:
+npm install web3
+
+infura.com API key
