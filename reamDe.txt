@@ -4,6 +4,12 @@ This app makes call to Ethereum Network through infura API and returns data:
 -info on Eth network (from NetCheck.js in the components folder)
 -info on the p3d/powh3d contract (Warning this is a pyramid on blockchain, literally don't touch it)
 
+"someERC20.js" file is a template file.
+"P3D.js" file is a little further delevoped example of contract. WARNING this is the ->Powh3d<- "pyramid scheme" contract on Ethereum, do not put your Eth there!
+"NetCheck.js" file retuns some Ethereum blockchain info. Could be developt a little further.
+"index.js" renders the P3D and NetCHeck components on the main page.
+"tableStyle.css" just a simple css style sheet applied to components.
+
 app starts with "npm start"
 
 Original Idea was to develop a tool where users input their public Ethereum address and the app returns all ERC20 balances they might have.
